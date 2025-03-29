@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio.</div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Add these lines in the head section, before closing </head> -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Update your hero section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+            <p>Hello, It's Me</p>
+            <h1>Kajal Jagtap</h1>
+            <h2>And I'm a <span class="auto-type"></span></h2>
+            <div class="social-links">
+                <a href="#" class="social-icon" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-icon" data-aos="fade-up" data-aos-delay="600"><i class="fab fa-instagram"></i></a>
+                
+                
+            </div>
+            <a href="#about" class="btn" data-aos="fade-up" data-aos-delay="1000">More About Me</a>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Add this before closing </body> -->
+<script>
+    AOS.init();
+    
+    var typed = new Typed(".auto-type", {
+        strings: ["Web Developer", "Frontend Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    });
+</script>
+<section id="about" class="about">
+    <div class="about-content">
+        <div class="about-image">
+            <img src="WhatsApp Image 2025-03-23 at 21.37.30_0f2acc65.jpg" alt="Profile">
+        </div>
+        <div class="about-text">
+            <h2>About <span class="highlight">Me</span></h2>
+            <h3>Web Developer!</h3>
+            <p>Hello! I'm Kajal Jagtap, a passionate and driven web developer with a keen eye for clean code and user-friendly design. I've had the pleasure of building responsive websites and web applications that deliver both functionality and a seamless user experience.
+
+                I specialize in [HTML, CSS, JavaScript, etc.] and am constantly exploring new technologies , also i am in lerning  phase of full backend technologies and frameworks to stay up to date in the ever-evolving tech landscape. My focus is always on creating intuitive, fast, and scalable web solutions that help businesses achieve their goals and users have an enjoyable digital experience.
+                
+                In my free time, I'm always excited to take on new projects, collaborate with others, and solve problems with creative solutions.
+                
+                Let's work together to bring your vision to life!.</p>
+             
+        </div>
+    </div>
+    <section id="skills" class="skills">
+        <h2>My <span class="highlight">Skills</span></h2>
+        
+        <div class="skills-container">
+            <!-- Technical Skills -->
+            <div class="technical-skills" data-aos="fade-right" data-aos-duration="1000">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line" data-percent="90%">
+                        <span style="width: 90%"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line" data-percent="60%">
+                        <span style="width: 85%"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <i class="fab fa-js"></i>
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line" data-percent="85%">
+                        <span style="width: 65%"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Professional Skills -->
+            <div class="professional-skills" data-aos="fade-left" data-aos-duration="1000">
+                <h3>Professional Skills</h3>
+                <div class="skill-circles">
+                    <div class="circle-progress">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">90%</div>
+                            </div>
+                        </div>
+                        <span class="skill-title">Creativity</span>
+                    </div>
+    
+                    <div class="circle-progress">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">80%</div>
+                            </div>
+                        </div>
+                        <span class="skill-title">Communication</span>
+                    </div>
+    
+                    <div class="circle-progress">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">75%</div>
+                            </div>
+                        </div>
+                        <span class="skill-title">Problem Solving</span>
+                    </div>
+    
+                    <div class="circle-progress">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">85%</div>
+                            </div>
+                        </div>
+                        <span class="skill-title">Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="resume" class="resume">
+    <h2 class="section-title" data-aos="fade-down">My <span class="highlight">Resume</span></h2>
+    
+    <div class="resume-content">
+        <div class="resume-column" data-aos="fade-right" data-aos-duration="1000">
+            <div class="resume-section">
+                <h3><i class="fas fa-user-graduate"></i> Education</h3>
+                <div class="resume-item">
+                    <h4>Bachelor of Computer Applications (BCA)</h4>
+                    <h5>2023 - Current</h5>
+                    <p>Saraswati College, Shegaon</p>
+                    <a href="https://saraswaticollege.edu.in/" class="college-link" target="_blank">College Website</a>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                <div class="resume-item">
+                    <h4>Web Programmer</h4>
+                    <h5>01/10/2024 - 01/11/2024</h5>
+                    <p>City: Shegaon | Country: India</p>
+                    <p>Worked on online-based projects in Octanet Services Pvt.Ltd, gaining hands-on experience in web development. 
+                    Developed and implemented solutions to enhance digital workflows and optimize user experience.</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3><i class="fas fa-laptop-code"></i> Digital Skills</h3>
+                <div class="resume-item">
+                    <ul class="skills-list">
+                        <li>C, C++, Java</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Python, UI/UX</li>
+                        <li>Basic of IOT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-column" data-aos="fade-left" data-aos-duration="1000">
+            <div class="resume-section">
+                <h3><i class="fas fa-code-branch"></i> Projects</h3>
+                <div class="resume-item">
+                    <h4>NutriSue</h4>
+                    <h5>2025 - Current</h5>
+                    <ul>
+                        <li>Designed and developed the NutriSure web platform for seamless user interaction</li>
+                        <li>Integrated AI-powered analytics for personalized diet and supplement recommendations</li>
+                        <li>Implemented real-time data processing with IoT-enabled dispensers</li>
+                        <li>Ensured a user-friendly interface for enhanced accessibility</li>
+                    </ul>
+                </div>
+
+                <div class="resume-item">
+                    <h4>QuizPy</h4>
+                    <h5>12/09/2024 - 15/10/2024</h5>
+                    <p>Interactive, web-based quiz application for enhanced learning through engaging assessments.</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3><i class="fas fa-language"></i> Language Skills</h3>
+                <div class="resume-item">
+                    <div class="language-grid">
+                        <div class="language-item" data-aos="zoom-in" data-aos-delay="100">
+                            <h4>Marathi</h4>
+                            <p>Mother Tongue</p>
+                            <div class="lang-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                            </div>
+                        </div>
+                        <div class="language-item" data-aos="zoom-in" data-aos-delay="200">
+                            <h4>English</h4>
+                            <p>Professional Working</p>
+                            <div class="lang-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </div>
+                        </div>
+                        <div class="language-item" data-aos="zoom-in" data-aos-delay="300">
+                            <h4>Hindi</h4>
+                            <p>Professional Working</p>
+                            <div class="lang-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            <div class="resume-section">
+                <h3><i class="fas fa-comments"></i> Communication Skills</h3>
+                <div class="resume-item">
+                    <ul class="skills-list">
+                        <li>Ability to explain complex technical concepts clearly and concisely</li>
+                        <li>Experience in writing research proposals and technical documentation</li>
+                        <li>Confident in delivering presentations and conducting discussions</li>
+                        <li>Adaptability and effective teamwork in diverse environments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="project" class="project">
+    <h2 class="section-title" data-aos="fade-down">My <span class="highlight">Projects</span></h2>
+    
+    <div class="project-container">
+        <!-- NutriSure Project -->
+        <div class="project-card" data-aos="fade-up">
+            <div class="project-content">
+                <h3>NutriSure</h3>
+                <span class="status">Ongoing Project</span>
+                <p>A comprehensive web platform for personalized nutrition and supplement recommendations using AI-powered analytics.</p>
+                <ul class="project-features">
+                    <li><i class="fas fa-check-circle"></i> AI-powered diet recommendations</li>
+                    <li><i class="fas fa-check-circle"></i> IoT-enabled dispensing system</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time health monitoring</li>
+                    <li><i class="fas fa-check-circle"></i> User-friendly interface</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>IoT</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- QuizPy Project -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-content">
+                <h3>QuizPy</h3>
+                <span class="status completed">Completed</span>
+                <p>An interactive web-based quiz application designed to enhance learning through engaging assessments and real-time feedback.</p>
+                <ul class="project-features">
+                    <li><i class="fas fa-check-circle"></i> Multiple quiz categories</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time scoring system</li>
+                    <li><i class="fas fa-check-circle"></i> Progress tracking</li>
+                    <li><i class="fas fa-check-circle"></i> Interactive UI</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/kajaljagtap2005/Quizypy" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+    <div class="contact-content">
+        <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Contact <span class="highlight">Me</span></h2>
+            <h3>Let's Work Together</h3>
+            <p>I'm always open to discussing new projects, collaborations, or opportunities. Feel free to reach out to me through any of the following</p>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kajaljagtapofficial@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>9370745201</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
